@@ -11,12 +11,12 @@ CREATE TABLE Categories
 (
     CategoryID INT PRIMARY KEY,
     CategoryName NVARCHAR(50),
-    Description NVARCHAR(255)
+    Descriptions NVARCHAR(255)
 );
 GO
 
 -- 4. Insert Data
-INSERT INTO Categories (CategoryID, CategoryName, Description)
+INSERT INTO Categories (CategoryID, CategoryName, Descriptions)
 VALUES
 (1, N'Beverages', N'Soft drinks, coffees, teas, beers, and ales'),
 (2, N'Condiments', N'Sweet and savory sauces, relishes, spreads, and seasonings'),
@@ -29,6 +29,6 @@ VALUES
 GO
 
 -- 5. Select Only Two Columns
-SELECT CategoryName, Description
+SELECT CategoryName, Descriptions
 FROM Categories;
 GO
